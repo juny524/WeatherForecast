@@ -11,6 +11,7 @@ import {HttpModule} from '@angular/http';
 import {OnsenModule} from 'ngx-onsenui';
 
 import {MyApp} from './app/app';
+import {KenlistComponent} from './app/kenlist/kenlist.component';
 
 // Enable production mode when in production mode.
 if (process.env.NODE_ENV === 'production') {
@@ -29,6 +30,10 @@ if (ons.platform.isIPhoneX()) {
     ],
     declarations: [
         MyApp,
+        KenlistComponent,
+    ],
+    entryComponents: [
+        KenlistComponent,
     ],
     bootstrap: [
         MyApp,
